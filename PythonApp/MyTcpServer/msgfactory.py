@@ -30,6 +30,9 @@ class msgbase(object):
     def onmsg(self,msg):
         pass
 
+    def prt(self):
+        pass
+
 #w qianjin
 class wmsg(msgbase):
     def __init__(self,cmd):
@@ -38,6 +41,7 @@ class wmsg(msgbase):
     def onmsg(self,msg):
         print(msg)
         che.qianjin(0.5)
+        self.prt()
 #s
 class smsg(msgbase):
     def __init__(self,cmd):
