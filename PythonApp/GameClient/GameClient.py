@@ -4,7 +4,7 @@ import time
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # 建立连接:
-s.connect(('192.168.0.103', 8009))
+s.connect(('192.168.137.220', 8009))
 # 接收欢迎消息:
 print(s.recv(1024).decode('utf-8'))
 
